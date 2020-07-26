@@ -21,7 +21,9 @@ class LoginController {
         data: result,
         msg: '邮件发送成功'
       };
-    } catch (e) {}
+    } catch (e) {
+      console.log(e);
+    }
   }
   async login(ctx) {
     //接受用户的数据
